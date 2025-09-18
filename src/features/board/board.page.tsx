@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
-import { PathParams, ROUTES } from "@/shared/model/routes.ts";
+import { ROUTES } from "@/shared/model/routes.ts";
+import type { PathParams } from "@/shared/model/routes.ts";
 
 function BoardPage() {
   const params = useParams<PathParams[typeof ROUTES.BOARD]>();
